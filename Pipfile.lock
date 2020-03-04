@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e440ba0b5cfa6ad7fa8bc1e606a7dbaba6f36897126cda1e7e28b6726fd2567f"
+            "sha256": "3e3bef77a9a59c1b2de99006569a281d78bf61217a75290af3563bf57f498e5e"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -296,6 +296,14 @@
             "markers": "sys_platform != 'win32'",
             "version": "==4.8.0"
         },
+        "phantomjs": {
+            "hashes": [
+                "sha256:b3638860de8711c250209fd38c976d10369e073c4054f2ee195364c45b9e4179",
+                "sha256:c4e9cd4b29dc8909dd0bf81084a9200aaab21093f3185e851dc766dbc97fda8c"
+            ],
+            "index": "pypi",
+            "version": "==1.1.4"
+        },
         "pickleshare": {
             "hashes": [
                 "sha256:87683d47965c1da65cdacaf31c8441d12b8044cdec9aca500cd78fc2c683afca",
@@ -434,6 +442,14 @@
             ],
             "version": "==19.0.0"
         },
+        "selenium": {
+            "hashes": [
+                "sha256:2d7131d7bc5a5b99a2d9b04aaf2612c411b03b8ca1b1ee8d3de5845a9be2cb3c",
+                "sha256:deaf32b60ad91a4611b98d8002757f29e6f2c2d5fcaf202e1c9ad06d6772300d"
+            ],
+            "index": "pypi",
+            "version": "==3.141.0"
+        },
         "send2trash": {
             "hashes": [
                 "sha256:60001cc07d707fe247c94f74ca6ac0d3255aabcb930529690897ca2a39db28b2",
@@ -488,6 +504,13 @@
                 "sha256:d023ee369ddd2763310e4c3eae1ff649689440d4ae59d7485eb4cfbbe3e359f7"
             ],
             "version": "==4.3.3"
+        },
+        "urllib3": {
+            "hashes": [
+                "sha256:2f3db8b19923a873b3e5256dc9c2dedfa883e33d87c690d9c7913e1f40673cdc",
+                "sha256:87716c2d2a7121198ebcb7ce7cccf6ce5e9ba539041cfbaeecfb641dc0bf6acc"
+            ],
+            "version": "==1.25.8"
         },
         "wcwidth": {
             "hashes": [

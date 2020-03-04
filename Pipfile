@@ -13,6 +13,8 @@ anytree = "*"
 tqdm = "*"
 bokeh = "*"
 ipywidgets = "*"
+selenium = "*"
+phantomjs = "*"
 
 [requires]
 python_version = "3.7"
