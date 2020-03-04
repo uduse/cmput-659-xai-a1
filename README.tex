@@ -1,4 +1,5 @@
 \documentclass[]{article}
+\usepackage{float}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
@@ -110,6 +111,8 @@
 Report}\label{cmput-659-assignment-1-report}
 
 \href{https://github.com/uduse/cmput-659-xai}{-\textgreater{} github}
+
+Things I wrote are in \texttt{sandbox.ipynb}.
 
 \subsection{The Domain Specific Language
 (DSL)}\label{the-domain-specific-language-dsl}
@@ -377,8 +380,8 @@ new ASTs.
 
 \subsection{Results}\label{results}
 
-I would like to see how these factors in my genetic algorithm affects
-the result:
+I would like to see how the population size, number of games played and number of elites in my genetic algorithm affects
+the result. There plots are obtained by averaging three runs with the same parameters.
 
 \begin{itemize}
 \tightlist
@@ -393,7 +396,7 @@ the result:
 I will do this comparison by keeping the other parameters the same while
 adjusting the target parameter.
 
-\begin{figure}[h]%
+\begin{figure}[H]%
   \centering
   \subfloat[population = 8]{{\includegraphics[width=5cm]{results/epochs_50_num_games_2_population-size_8_num_elites_4.png} }}%
   \qquad
@@ -406,7 +409,10 @@ adjusting the target parameter.
   \label{fig:example}%
 \end{figure}
 
-\begin{figure}[h]%
+As we can see, larger population increases the population overall win
+rate of the scripts.
+
+\begin{figure}[H]%
   \centering
   \subfloat[number of games = 1]{{\includegraphics[width=5cm]{results/epochs_50_num_games_1_population-size_12_num_elites_4.png} }}%
   \qquad
@@ -417,7 +423,9 @@ adjusting the target parameter.
   \label{fig:example}%
 \end{figure}
 
-\begin{figure}[h]%
+It seems that the number of games played has no direct impact on the quality of the scripts generated.
+
+\begin{figure}[H]%
   \centering
   \subfloat[number of elites = 1]{{\includegraphics[width=5cm]{results/epochs_50_num_games_2_population-size_12_num_elites_2.png} }}%
   \qquad
@@ -428,15 +436,13 @@ adjusting the target parameter.
   \label{fig:example}%
 \end{figure}
 
-As we can see, larger population increases the population overall win
-rate of the scripts.
-It seems that the number of games played has no direct impact on the
-quality of the scripts generated.
-
 Aa we can see, having more elites negatively impacts the quality of the
 scripts generated. My guess is that too many elites limits the potential
 space for mutation and crossover, so better scripts are less likely to
 emerge.
+
+I also tried to evaluate last generation against the first generation.
+However, it seems the first generations usually can't capture anything that is meaningful, so they almost always lost 100\% of the time.
 
 \subsection{Discussion}\label{discussion}
 
